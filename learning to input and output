@@ -1,19 +1,27 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);                       // assigning scanner
+        Scanner scnr = new Scanner(System.in);                       // assigning scanner
         System.out.println("Enter your name");                          // output "Enter your name"
-        String name = scanner.nextLine();                               // name = input
+        String name = scnr.nextLine();                               // name = input
         System.out.printf("Hello %s!",name);                            // outputting sentence with name variable
 
         System.out.println("\nWhats your favourite colour");            // output "whats ur fav colour
-        String colour = scanner.next();                                 // colour = input (1 word only)
+        String colour = scnr.next();                                 // colour = input (1 word only)
         System.out.printf("%s's favourite colour is %s",name,colour);   // outputting sentence with variables
 
         System.out.println("\nHow old are you");                        // ask age
-        int age = scanner.nextInt();
+        int age = scnr.nextInt();
         System.out.printf("%s is %d years old",name,age);
 
-        scanner.close();
+        int year;
+       // String sentence;
+        System.out.println("Which year are you born: ");
+        year = scnr.nextInt();
+        //System.out.println("Say something: ");
+       // sentence = scnr.nextLine();
+
+
+        scnr.close();
     }
 }
